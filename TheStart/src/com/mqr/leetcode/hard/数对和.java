@@ -6,7 +6,7 @@ import java.util.List;
 
 public class 数对和 {
 
-    public static List<List<Integer>> pairSums(int[] nums, int target) {
+    public List<List<Integer>> pairSums(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList();
         Arrays.sort(nums);
         int start = 0;
@@ -26,16 +26,6 @@ public class 数对和 {
             }
         }
         return list;
-    }
-
-    public static void main(String[] args) {
-        List<List<Integer>> lists = pairSums(new int[]{5, 6, 3, -6, 2, 1, 1, 0, 8, 0},
-                2);
-        for (List<Integer> list : lists) {
-            for (Integer integer : list) {
-                System.out.println(integer);
-            }
-        }
     }
 
 }
